@@ -18,10 +18,12 @@ body{
 .logo{
     width: 200px;
     height: 100px;
-    background: url('/img/Logo.png');
-    background-size: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoimg{
+    width: 150px;
 }
 .menu_list{
     list-style: none;
