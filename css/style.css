@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Reem+Kufi:wght@400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 body{
     margin: 0;
     background: #090909;
-    font-family: 'Reem Kufi', sans-serif;
+    color: #FFFFFF;
+    font-family: 'Reem Kufi', bootstrap-icons, sans-serif;
 }
 .nav{
     width: 100%;
     height: 100px;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     background-color: #1e1e1e;
@@ -37,15 +40,63 @@ body{
     transition: 0.3s;
 }
 .active{
-    color: #67BD48;
-    text-shadow: 0 0 30px #67BD48;
+    color: #3494CC;
+    text-shadow: 0 0 20px #67BD48;
     font-size: 18px;
     padding: 15px 15px;
-    border-bottom: #67BD48 solid 5px;
+    border-bottom: #3494CC solid 5px;
 }
 .menu_link:hover{
     color: #EAE82A;
     padding: 15px 15px;
     border-bottom: #EAE82A solid 5px;
     text-shadow: 0 0 30px #EAE82A;
+}
+.content{
+    width: 900px;
+}
+.home_text{
+    margin: 20px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.cwu{
+    width: 150px;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    border: #3494CC solid 2px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.cwu:hover{
+    width: 175px;
+    height: 50px;
+    font-weight: 700;
+    border: #67BD48 solid 2px;
+}
+.head{
+    margin: 50px;
+    color:;
+}
+.spacer{
+    padding: 10px;
+}
+.spacer1{
+    padding: 20px;
+}
+.more{
+    transition: 0.3s;
+    width: 150px;
+    height: 40px;
+    background: none;
+    border: #67BD48 solid 2px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.more:hover{
+    width: 175px;
+    height: 50px;
+    font-weight: 700;
+    border: #EAE82A solid 2px;
 }

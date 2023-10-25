@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Reem+Kufi:wght@400;500;600;700&display=swap');
+#wrapper{
+    text-align:center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size:50px;
+    background: #67BD48;
+    text-shadow: 0 0 50px #3494CC;
+    background-clip:border-box;
+    text-fill-color: transparent;
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: #67BD48;
+    text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+  }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
