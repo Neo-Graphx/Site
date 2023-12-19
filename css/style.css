@@ -2,7 +2,7 @@
 .logo{
     width: 200px;
     height: 100px;
-    background-image: url("/img/Logo.png");
+    background-image: url("img/Logo.png");
     background-size: 175px;
     background-repeat: no-repeat;
     background-position: center;
