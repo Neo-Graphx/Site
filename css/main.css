@@ -21,7 +21,7 @@ body{
     display: flex;
     background-color: rgba(35, 35, 35, 0.5);
     backdrop-filter: blur(10px);
-    border-right: 5px solid #2E2E2E;
+    box-shadow: 0px 0 10px #000000;
     justify-content: center;
 }
 .menu{
