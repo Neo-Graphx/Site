@@ -1,15 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Reem+Kufi:wght@400;500;600;700&display=swap');
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: url("/img/BG.png") no-repeat;
+    background-size: cover;
+    font-family: 'Reem Kufi', sans-serif, bootstraps-icon;
+    color: #FFFFFF;
+}
+.cont{
+    background-color: rgba(9, 9, 9, 0.9);
+    backdrop-filter: blur(10px);
+}
+.nav{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    background-color: rgba(35, 35, 35, 0.75);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+}
+.menu{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    width: 100%;
+}
 .home{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    padding: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-}
-.abt,.contact{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }

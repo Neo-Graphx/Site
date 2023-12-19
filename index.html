@@ -13,49 +13,43 @@
     <!--StyleSheet-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/textanimation.css">
+    <link rel="stylesheet" href="css/slider.css">
     <!--JavaScript-->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/main.js"></script>
 </head>
-<body>
-    <nav class="nav">
-        <a href="https://neographx.com/">
-            <div class="logo">
-                <img src="img/Logo.png" alt="Neo Graphx - A Power that Shines your Business" class="logoimg">
+<body class="body">
+    <div class="nav">
+        <a href="https://www.neographx.com" class="logo" title="Neo Graphx - A Power that Shines your Business"></a>
+        <div class="menu">
+            <div class="menu-item">
+                <button class="menu-link" onclick="window.location.href='#home'">Home</button>
+                <button class="menu-link" onclick="window.location.href='#about'">About us</button>
+                <button class="menu-link" onclick="window.location.href='#services'">What we do?</button>
+                <button class="menu-link" onclick="window.location.href='#contact'">Contact us</button>
             </div>
-        </a>
-        <ul class="menu_list">
-            <li class="menu_item"><button class="link menu_link active" onclick="window.location.href='index.html';">Home</button></li>
-            <li class="menu_item"><button class="link menu_link" onclick="window.location.href='about.html';">About</button></li>
-            <li class="menu_item"><button class="link menu_link" onclick="window.location.href='what_we_do.html';">What we do</button></li>
-            <li class="menu_item"><button class="link menu_link" onclick="window.location.href='contact.html';">Contact us</button></li>
-        </ul>
-    </nav>
-    <div class="home">
-        <div class="content">
-            <div class="home_text">Rev up your marketing game with the perfect trio</div>
-            <div id="wrapper">
-                <script src="js/textanimation.js"></script>
-            </div>
-            <div class="home_text">Dominate the online landscape, streamline your efforts, and skyrocket your success!</div>
-            <div class="spacer"></div>
-            <button class="cwu" onclick="window.location.href='contact.html';">Connect with us</button>
         </div>
     </div>
-    <div class="abt">
-        <div class="content">
-            <h2 class="head">About us</h2>
-            <div class="abt_text">At Neo Graphx, we are the architects of digital success. With a passion for innovation and a commitment to excellence, we are your trusted partner for all things digital.</div>
-            <div class="spacer"></div>
-            <div class="abt_text">We're more than just a company, we're your strategic partner in the digital realm. With a rich tapestry of talent, experience, and unwavering dedication, we've been at the forefront of transforming businesses into digital powerhouses.</div>
-            <div class="spacer1"></div>
-            <button class="more" onclick="window.location.href='about.html';">More&nbsp;&nbsp;Details</button>
-        </div>
-    </div>
-    <div class="contact">
-        <div class="content">
-            <h2 class="head">Contact us</h2>
-            <div></div>
+    <div class="cont">
+        <div id="home" class="home">
+            <div class="row">
+                <div class="col home_cont">
+                    <div class="hometxt">Rev up your marketing game with the perfect trio</div>
+                    <div id="wrapper"></div>
+                    <script src="js/textanimation.js"></script>
+                    <div class="hometxt">Dominate the Online Landscape, Streamline your Efforts & Skyrocket your Success!!</div>
+                    <button class="connect" onclick="window.location.href='#contact'">Connect with us</button>
+                </div>
+                <div class="col home_slider">
+                    <div class="slider">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
