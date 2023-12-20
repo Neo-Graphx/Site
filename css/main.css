@@ -15,25 +15,8 @@ body{
     background-color: rgba(9, 9, 9, 0.25);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-}
-.nav{
-    width: 250px;
-    height: 100%;
-    display: flex;
-    background-color: rgba(35, 35, 35, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0px 0 10px #000000;
-    justify-content: center;
-}
-.mobile-nav{
-    display: none;
-}
-.menu{
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .cont{
     width: 100%;
@@ -44,4 +27,28 @@ body{
     padding: 50px;
     display: flex;
     align-items: center;
+    transition: 0.5s;
+}
+.about{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.services{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.contact{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
 }
