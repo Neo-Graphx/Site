@@ -132,7 +132,6 @@
 .tab{
     display: flex;
     align-items: left;
-    text-align: left;
     background-color: rgba(9, 9, 9, 0.5);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
