@@ -129,7 +129,7 @@
     padding: 25px;
     border-radius: 10px;
 }
-.tab{
+.tab div{
     text-align: left;
     background-color: rgba(9, 9, 9, 0.5);
     backdrop-filter: blur(50px);
