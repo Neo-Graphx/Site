@@ -21,7 +21,7 @@
     background-position: center;
 }
 .home_cont{
-    width: auto;
+    width: 100%;
 }
 .home_slider{
     width: 100%;
@@ -74,6 +74,12 @@
 }
 .spacer{
     padding: 10px;
+}
+.space{
+    padding: 0px 5px;
+}
+.gap{
+    padding: 5px 0px;
 }
 .tab-spacer{
     padding: 5px;
@@ -153,6 +159,33 @@
 .tab-head i{
     font-size: 30px;
 }
+.contact-content{
+    text-align: center;
+}
+.contact-head{
+    font-size: 40px;
+}
+.sub-head{
+    font-size: 14px;
+}
+.sub-head1{
+    font-size: 25px;
+}
+.contact-cont{
+    background: #23232380;
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #000000;
+}
+.cont-form{
+    padding: 40px 40px;
+}
+.cont-detls{
+    text-align: left;
+    padding: 40px 40px;
+    background-color: #090909bf;
+}
 .fname,.cname,.phno,.mailid{
     width: 240px;
     height: 50px;
@@ -167,14 +200,14 @@
 .fname::placeholder,.cname::placeholder,.phno::placeholder,.mailid::placeholder{
     color: #FFFFFFB6;
 }
-.fname:focus,.cname:focus,.mailid:focus,.phno:focus,.typeof:focus{
+.fname:focus,.cname:focus,.mailid:focus,.phno:focus,.typeof:focus,.phno:hover,.fname:hover,.cname:hover,.mailid:hover,.typeof:hover{
     padding: 0px 15px;
     outline: none;
     border: 2px solid #3494CC;
     box-shadow: 0 0 10px #3494CC;
     transition: 0.3s;
 }
-.message:focus{
+.message:focus,.message:hover{
     padding: 15px 15px;
     outline: none;
     border: 2px solid #3494CC;
@@ -214,7 +247,7 @@
     width: 500px;
     height: 40px;
     color: #67BD48;
-    border: none;
+    border: 2px solid #67BD48;
     background: #232323;
     border-radius: 10px;
     transition: 0.3s;
@@ -225,4 +258,36 @@
     font-weight: 700;
     box-shadow: 0 0 10px #67BD48;
     transition: 0.3s;
+}
+.detls{
+    text-decoration: none;
+}
+.head-contact{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.head-contact:hover{
+    text-shadow: 0 0 20px #3494CC;
+}
+.follow-head{
+    font-size: 20px;
+    font-weight: 700;
+}
+.sicons,.cicon{
+    font-size: 25px;
+    text-decoration: none;
+}
+.sicons{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.icon:hover{
+    text-shadow: 0 0 20px #67BD48;
 }
