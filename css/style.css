@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Pixelify+Sans&family=Reem+Kufi:wght@400;500;600;700&display=swap');
 .cont::-webkit-scrollbar{
-    width: 7.5px;
+    width: 5px;
 }
 .cont::-webkit-scrollbar-track-piece{
     background-color: #232323;
@@ -134,10 +134,17 @@
     background-color: rgba(9, 9, 9, 0.5);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    height: 180px;
+    height: 190px;
     padding: 20px;
     border-radius: 10px;
 }
 .tab-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 20px;
+    font-weight: 700;
+}
+.tab-head i{
+    font-size: 30px;
 }
