@@ -168,9 +168,6 @@
 .sub-head{
     font-size: 14px;
 }
-.sub-head1{
-    font-size: 25px;
-}
 .contact-cont{
     background: #23232380;
     -webkit-backdrop-filter: blur(50px);
@@ -189,7 +186,7 @@
 .fname,.cname,.phno,.mailid{
     width: 240px;
     height: 50px;
-    background: #232323;
+    background: #090909;
     border: none;
     border-radius: 10px;
     color: #FFFFFF;
@@ -222,7 +219,7 @@
 .typeof{
     width: 500px;
     height: 50px;
-    background: #232323;
+    background: #090909;
     border: none;
     border-radius: 10px;
     color: #FFFFFF;
@@ -230,7 +227,7 @@
     padding: 0px 10px 0 10px;
 }
 .message{
-    background: #232323;
+    background: #090909;
     border: none;
     border-radius: 10px;
     color: #67BD48;
@@ -247,14 +244,14 @@
     width: 500px;
     height: 40px;
     color: #67BD48;
-    border: 2px solid #67BD48;
-    background: #232323;
+    border: none;
+    background: #090909;
     border-radius: 10px;
     transition: 0.3s;
 }
 .submit:hover{
-    background: #67BD48;
-    color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #67BD48;
     font-weight: 700;
     box-shadow: 0 0 10px #67BD48;
     transition: 0.3s;
