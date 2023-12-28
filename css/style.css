@@ -78,6 +78,9 @@
 .space{
     padding: 0px 5px;
 }
+.card-space{
+    height: 25vh;
+}
 .gap{
     padding: 5px 0px;
 }

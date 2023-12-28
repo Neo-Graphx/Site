@@ -18,6 +18,13 @@
     font-size: 25px;
     padding: 20px;
 }
+.flip-fcont{
+    height: 150px;
+    padding: 10px;
+    background: #232323BF;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
 .flip-img{
     height: 200px;
 }
@@ -33,8 +40,8 @@
 }
 .flip-front {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     color: #FFFFFF;
@@ -50,11 +57,23 @@
     background: url(../img/dm1.png),#090909BF;
     background-size: cover;
 }
+.dm-cont{
+    border-top: 3px solid #3494CC;
+    box-shadow: 0 0 10px #3494CC;
+}
 .gd{
     background: url(../img/gd1.png),#090909BF;
     background-size: cover;
 }
+.gd-cont{
+    border-top: 3px solid #EAE82A;
+    box-shadow: 0 0 10px #EAE82A;
+}
 .ss{
     background: url(../img/ss1.png),#090909BF;
     background-size: cover;
+}
+.ss-cont{
+    border-top: 3px solid #67BD48;
+    box-shadow: 0 0 10px #67BD48;
 }
