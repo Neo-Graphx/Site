@@ -171,6 +171,7 @@
 .contact-cont{
     background: #23232380;
     -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 20px #000000;
@@ -287,4 +288,10 @@
 }
 .icon:hover{
     text-shadow: 0 0 20px #67BD48;
+}
+.what-content{
+    text-align: center;
+}
+.what-cards{
+    display: flex;
 }
