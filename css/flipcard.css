@@ -77,3 +77,18 @@
     border-top: 3px solid #67BD48;
     box-shadow: 0 0 10px #67BD48;
 }
+.what-list{
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.what-tab{
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #090909BF;
+}
