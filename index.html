@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="css/flipcard.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--JavaScript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <script src="js/typewriter.js"></script>
     <script src="js/main.js"></script>
+    
 </head>
 <body onload="myFunction()">
     <div class="loader" id="loader">
@@ -56,13 +58,13 @@
             <div id="home" class="home">
                 <div class="row">
                     <div class="col home_cont">
-                        <div class="hometxt">Rev up your marketing game with the perfect trio</div>
-                        <div id="wrapper"></div>
+                        <div class="hometxt" data-aos="fade-up">Rev up your marketing game with the perfect trio</div>
+                        <div id="wrapper" data-aos="fade-up"></div>
                         <script src="js/textanimation.js"></script>
-                        <div class="hometxt">Dominate the Online Landscape, Streamline your Efforts & Skyrocket your Success!!</div>
-                        <button class="connect" onclick="window.location.href='#contact'">Connect with us</button>
+                        <div class="hometxt" data-aos="fade-up">Dominate the Online Landscape, Streamline your Efforts & Skyrocket your Success!!</div>
+                        <button class="connect" data-aos="fade-up" onclick="window.location.href='#contact'">Connect with us</button>
                     </div>
-                    <div class="col home_slider">
+                    <div class="col home_slider" data-aos="fade-right">
                         <div class="slider">
                             <img src="#" alt="">
                             <img src="#" alt="">
@@ -319,4 +321,26 @@
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    AOS.init({
+        disable: false,
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+        offset: 120,
+        delay: 0,
+        duration: 400,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+    });
+</script>
 </html>
