@@ -28,6 +28,13 @@
     from{ right:100%; opacity: 0;}
     to{right: 0%; opacity: 1;}
 }
+.logo,.menu-item{
+    position: relative;
+    -webkit-animation-name: animateleft;
+    -webkit-animation-duration: 4s;
+    animation-name: animateleft;
+    animation-duration: 4s;
+}
 .cont{
     position: relative;
     -webkit-animation-name: animateright;
@@ -42,4 +49,37 @@
 @keyframes animateright{
     from{ left:100%; opacity: 0;}
     to{left: 0%; opacity: 1;}
+}
+@-webkit-keyframes welcomeanimate{
+    from{left: 50%; opacity: 0;}
+    to{left: 0%; opacity: 1;}
+}
+@keyframes welcomeanimate{
+    from{left: 50%; opacity: 0;}
+    to{left: 0%; opacity: 1;}
+}
+.txt1{
+    position: relative;
+    animation: welcomeanimate 4s;
+    -webkit-animation: welcomeanimate 4s;
+}
+#wrapper{
+    position: relative;
+    animation: welcomeanimate 5s;
+    -webkit-animation: welcomeanimate 5s;
+}
+.txt3{
+    position: relative;
+    animation: welcomeanimate 6s;
+    -webkit-animation: welcomeanimate 6s;
+}
+.btn-animate{
+    position: relative;
+    animation: welcomeanimate 7s;
+    -webkit-animation: welcomeanimate 7s;
+}
+.slider{
+    position: relative;
+    animation: welcomeanimate 4s;
+    -webkit-animation: welcomeanimate 4s;
 }

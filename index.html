@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="css/textanimation.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/flipcard.css">
-    <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-    <!--JavaScript-->
     
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!--JavaScript-->
     <script src="js/typewriter.js"></script>
     <script src="js/main.js"></script>
     
@@ -31,7 +32,7 @@
         <img src="./img/Logo_ng.png" alt="" class="loader-img">
         <div class="loading" id="loading"></div>
     </div>
-    <div class="body" id="body" data-aos="fade-up">
+    <div class="body" id="body" data-aos="slide-up">
         <div class="nav" data-aos="slide-left">
             <a href="https://www.neographx.com" class="logo" title="Neo Graphx - A Power that Shines your Business"></a>
             <div class="menu">
@@ -43,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="mobile-nav">
+        <div class="mobile-nav" data-aos="slide-up">
             <a href="https://www.neographx.com" class="logo" title="Neo Graphx - A Power that Shines your Business"></a>
             <div class="mobile-menu">
                 <div class="mobile-menu-item">
@@ -54,15 +55,15 @@
                 </div>
             </div>
         </div>
-        <div class="cont">
+        <div class="cont" data-aos="slide-right">
             <div id="home" class="home">
                 <div class="row">
                     <div class="col home_cont">
-                        <div data-aos="fade-up"><div class="hometxt">Rev up your marketing game with the perfect trio</div></div>
-                        <div id="wrapper" data-aos="fade-up"></div>
+                        <div class="hometxt txt1" data-aos="fade-in">Rev up your marketing game with the perfect trio</div>
+                        <div id="wrapper"></div>
                         <script src="js/textanimation.js"></script>
-                        <div class="hometxt" data-aos="fade-up">Dominate the Online Landscape, Streamline your Efforts & Skyrocket your Success!!</div>
-                        <button class="connect" data-aos="fade-up" onclick="window.location.href='#contact'">Connect with us</button>
+                        <div class="hometxt txt3">Dominate the Online Landscape, Streamline your Efforts & Skyrocket your Success!!</div>
+                        <button class="connect btn-animate" onclick="window.location.href='#contact'">Connect with us</button>
                     </div>
                     <div class="col home_slider" data-aos="fade-right">
                         <div class="slider">
@@ -75,9 +76,9 @@
             </div>
             <div class="about" id="about">
                 <div class="content">
-                    <div class="row" data-aos="fade-up">
+                    <div class="row">
                         <div class="col">
-                            <div class="abt">
+                            <div class="abt" data-aos='fade-up'>
                                 <div class="abt-img">
                                     <img src="img/about.png" alt="About us" class="imgabt">
                                 </div>
@@ -311,7 +312,7 @@
                                 <a href="https://www.facebook.com/neographx24?mibextid=LQQJ4d" class="bi bi-facebook icon" target="_blank"></a>
                                 <a href="https://www.instagram.com/neo_graphx?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr" class="bi bi-instagram icon" target="_blank"></a>
                                 <a href="https://x.com/graphxneo?s=21&t=a6x3J4YzRUU168p_Ew_Eog" class="bi bi-twitter-x icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/company/neographx/" class="bi bi-linkedin icon" target="_"></a>
+                                <a href="https://www.linkedin.com/company/neographx/" class="bi bi-linkedin icon" target="_blank"></a>
                                 <a href="https://wa.me/message/U63QK7LYTM26G1" class="bi bi-whatsapp icon" target="_blank"></a>
                             </div>
                         </div>
@@ -320,10 +321,9 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="node_modules/aos/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 </html>

@@ -5,7 +5,6 @@ body{
     width: 100%;
     height: 100%;
     background: #090909;
-    overflow: hidden;
 }
 .body{
     width: 100%;
@@ -15,13 +14,16 @@ body{
     background-size: cover;
     font-family: 'Reem Kufi', sans-serif, bootstraps-icon;
     color: #FFFFFF;
+    overflow: hidden;
+    overflow-x: hidden;
 }
 .cont{
+    width: 100%;
     background-color: #09090940;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     overflow: scroll;
-    overflow-x: hidden;
+    overflow-x:auto;
     scroll-behavior: smooth;
 }
 .cont{
