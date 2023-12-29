@@ -230,6 +230,9 @@
     font-size: 14px;
     padding: 0px 10px 0 10px;
 }
+.typeof:active{
+    background: #232323;
+}
 .message{
     background: #090909;
     border: none;
