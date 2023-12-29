@@ -22,6 +22,7 @@ body{
     -webkit-backdrop-filter: blur(5px);
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .cont{
     width: 100%;
@@ -32,17 +33,12 @@ body{
     padding: 50px;
     display: flex;
     align-items: center;
-    scroll-behavior: smooth;
-    -webkit-transition: ease-in-out 0.3s;
-    transition: 0.3s;
 }
 .about{
     width: 100%;
     padding: 50px;
     display: flex;
     justify-content: center;
-    scroll-behavior: smooth;
-    -webkit-transition: 0.3s;
 }
 .what_we_do{
     width: 100%;
@@ -51,7 +47,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-behavior: smooth;
 }
 .contact{
     width: 100%;
@@ -60,5 +55,4 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-behavior: smooth;
 }

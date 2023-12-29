@@ -1,4 +1,3 @@
-
 var myVar;
 
 function myFunction() {
