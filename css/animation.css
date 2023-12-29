@@ -1,0 +1,45 @@
+.body{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom{
+    from { top:100%; opacity:0 } 
+    to { top:0%; opacity:1 }
+}
+@keyframes animatebottom{ 
+    from{top:100%; opacity:0 } 
+    to{ top:0%; opacity:1 }
+}
+.nav{
+    position: relative;
+    -webkit-animation-name: animateleft;
+    -webkit-animation-direction: 2s;
+    animation-name: animateleft;
+    animation-duration: 2s;
+}
+@-webkit-keyframes animateleft{
+    from{ right:100%; opacity: 0;}
+    to{right: 0%; opacity: 1;}
+}
+@keyframes animateleft{
+    from{ right:100%; opacity: 0;}
+    to{right: 0%; opacity: 1;}
+}
+.cont{
+    position: relative;
+    -webkit-animation-name: animateright;
+    -webkit-animation-direction: 3s;
+    animation-name: animateright;
+    animation-duration: 2s;
+}
+@-webkit-keyframes animateright{
+    from{ left:100%; opacity: 0;}
+    to{left: 0%; opacity: 1;}
+}
+@keyframes animateright{
+    from{ left:100%; opacity: 0;}
+    to{left: 0%; opacity: 1;}
+}
