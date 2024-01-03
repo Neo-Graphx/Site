@@ -17,31 +17,23 @@
     <link rel="stylesheet" href="css/textanimation.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/flipcard.css">
-    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <!--JavaScript-->
+    <link rel="stylesheet" href="css/animation.css">
     <script src="js/typewriter.js"></script>
-    <script src="js/main.js"></script>
-    
 </head>
 <body onload="myFunction()">
     <div class="loader" id="loader">
         <img src="./img/Logo_ng.png" alt="" class="loader-img">
         <div class="loading" id="loading"></div>
     </div>
-    <div class="body" id="body" data-aos="slide-up">
-        <div class="nav" data-aos="slide-left">
+    <div class="body aos-animate" id="body" data-aos="fade-up" data-aos-delay="5">
+        <div class="nav" aos="slide-left">
             <a href="https://www.neographx.com" class="logo" title="Neo Graphx - A Power that Shines your Business"></a>
-            <div class="menu">
-                <div class="menu-item">
-                    <a class="menu-link" href="#home"><button>Home</button></a>
-                    <a class="menu-link" href="#about"><button>About us</button></a>
-                    <a class="menu-link" href="#what_we_do"><button>What we do?</button></a>
-                    <a class="menu-link" href="#contact"><button>Contact us</button></a>
-                </div>
+            <div class="menu-item" id="menu-item">
+                <button class="menu-btn active-menu" onclick="window.location.href='#home'">Home</button>
+                <button class="menu-btn" onclick="window.location.href='#about'">About us</button>
+                <button class="menu-btn" onclick="window.location.href='#what_we_do'">What we do?</button>
+                <button class="menu-btn" onclick="window.location.href='#contact'">Contact us</button>
             </div>
         </div>
         <div class="mobile-nav" data-aos="slide-up">
@@ -237,7 +229,7 @@
                     <div class="sub-head">QUESTIONS<span class="space"></span>&<span class="space"></span>COLLABORATIONS</div>
                     <div class="spacer"></div>
                     <div class="contact-cont row">
-                        <form action="" class="cont-form col">
+                        <form action="contact.php" name="contact-form" method="POST" class="cont-form col">
                             <div class="person-info">
                                 <input type="text" name="fname" id="fname" class="fname" placeholder="Full Name" required>
                                 <input type="text" name="cname" id="cname" class="cname" placeholder="Company Name" required>
@@ -245,7 +237,7 @@
                             <div class="spacer"></div>
                             <div class="cont-info">
                                 <input type="tel" name="phno" id="phno" class="phno" placeholder="Mobile Number" required>
-                                <input type="email" name="mailid" id="mailid" class="mailid" placeholder="Work Email ID" required>
+                                <input type="email" name="mailid" id="mail" class="mail" placeholder="Work Email ID" required>
                             </div>
                             <div class="spacer"></div>
                             <select name="typeof" id="typeof" class="typeof" required>
@@ -282,9 +274,14 @@
                                 <option value="Package Details">Package Details</option>
                             </select>
                             <div class="spacer"></div>
-                            <textarea name="message" id="message" cols="30" rows="10" class="message" placeholder="Your Message"></textarea>
+                            <textarea name="ymessage" id="message" cols="30" rows="10" class="message" placeholder="Your Message"></textarea>
                             <div class="spacer"></div>
-                            <input type="submit" value="Submit" id="submit" class="submit">
+                            <input type="submit" value="Submit" name="submit" id="submit" class="submit">
+                            <?php if(!empty($message)){?>
+                            <div class="success">
+                                <strong><?php echo $message ?></strong>
+                            </div>
+                            <?php } ?>
                         </form>
                         <div class="cont-detls col">
                             <div class="follow-head">Contact us</div>
@@ -309,11 +306,11 @@
                             <div class="follow-head">Follow us on</div>
                             <div class="spacer"></div>
                             <div class="sicons">
-                                <a href="https://www.facebook.com/neographx24?mibextid=LQQJ4d" class="bi bi-facebook icon" target="_blank"></a>
-                                <a href="https://www.instagram.com/neo_graphx?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr" class="bi bi-instagram icon" target="_blank"></a>
-                                <a href="https://x.com/graphxneo?s=21&t=a6x3J4YzRUU168p_Ew_Eog" class="bi bi-twitter-x icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/company/neographx/" class="bi bi-linkedin icon" target="_blank"></a>
-                                <a href="https://wa.me/message/U63QK7LYTM26G1" class="bi bi-whatsapp icon" target="_blank"></a>
+                                <a href="https://www.facebook.com/neographx24?mibextid=LQQJ4d" class="bi bi-facebook facebook icon" target="_blank"></a>
+                                <a href="https://www.instagram.com/neo_graphx?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr" class="bi bi-instagram instagram icon" target="_blank"></a>
+                                <a href="https://x.com/graphxneo?s=21&t=a6x3J4YzRUU168p_Ew_Eog" class="bi bi-twitter-x twitter-x icon" target="_blank"></a>
+                                <a href="https://www.linkedin.com/company/neographx/" class="bi bi-linkedin linkedin icon" target="_blank"></a>
+                                <a href="https://wa.me/message/U63QK7LYTM26G1" class="bi bi-whatsapp whatsapp icon" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -321,9 +318,35 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script>
         AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
     </script>
 </body>
 </html>

@@ -173,7 +173,7 @@
     padding: 40px 40px;
     background-color: #090909bf;
 }
-.fname,.cname,.phno,.mailid{
+.fname,.cname,.phno,.mail{
     width: 240px;
     height: 50px;
     background: #090909;
@@ -184,10 +184,10 @@
     font-size: 14px;
     transition: 0.3s;
 }
-.fname::placeholder,.cname::placeholder,.phno::placeholder,.mailid::placeholder{
+.fname::placeholder,.cname::placeholder,.phno::placeholder,.mail::placeholder{
     color: #FFFFFFB6;
 }
-.fname:focus,.cname:focus,.mailid:focus,.phno:focus,.typeof:focus,.phno:hover,.fname:hover,.cname:hover,.mailid:hover,.typeof:hover{
+.fname:focus,.cname:focus,.mail:focus,.phno:focus,.typeof:focus,.phno:hover,.fname:hover,.cname:hover,.mail:hover,.typeof:hover{
     padding: 0px 15px;
     outline: none;
     border: 2px solid #3494CC;
@@ -216,14 +216,11 @@
     font-size: 14px;
     padding: 0px 10px 0 10px;
 }
-.typeof:active{
-    background: #232323;
-}
 .message{
     background: #090909;
     border: none;
     border-radius: 10px;
-    color: #67BD48;
+    color: #FFFFFF;
     padding: 10px 10px;
     text-align: start;
     width: 500px;
@@ -267,12 +264,15 @@
     font-weight: 700;
 }
 .sicons,.cicon{
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
 }
 .sicons{
     display: flex;
     justify-content: space-between;
+}
+.facebook:hover,.instagram:hover,.twitter-x:hover,.linkedin:hover,.whatsapp:hover{
+    font-size: 25px;
 }
 .icon{
     color: #FFFFFF;

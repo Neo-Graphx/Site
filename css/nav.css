@@ -20,20 +20,21 @@
 .menu-link{
     transition: 0.3s;
 }
-.menu-link button{
+.menu-btn{
     width: 200px;
     height: 50px;
     text-align: left;
     padding: 0px 20px;
     background: none;
+    font-size: 14px;
     border: none;
     color: #FFFFFF;
     transition: 0.3s;
 }
-.menu-link button:hover{
+.menu-btn:hover,.active-menu{
     font-weight: 600;
     font-size: 18px;
-    padding: 0px 30px;
-    color: #3494CC;
+    padding: 0px 25px;
+    color: #EAE82A;
     text-shadow: #67BD48 0px 0px 20px;
 }
