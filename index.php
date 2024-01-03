@@ -222,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <?php
+<?php
 if(!empty($_POST["submit"])){
     $fname = $_POST["fname"];
     $cname = $_POST["cname"];
