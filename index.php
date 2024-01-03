@@ -222,6 +222,27 @@
                     </div>
                 </div>
             </div>
+            <?php
+if(!empty($_POST["submit"])){
+    $fname = $_POST["fname"];
+    $cname = $_POST["cname"];
+    $mailid = $_POST["mailid"];
+    $phno = $_POST["phno"];
+    $typeof = $_POST["typeof"];
+    $ymessage = $_POST["ymessage"];
+    $toMail = "connect@neographx.com";
+
+    $mailHeader = "Name: " . $fname .
+    "\r\n Company Name:" . $cname .
+    "\r\n Phone Number:" . $phno .
+    "\r\n Mail ID:" . $mailid .
+    "\r\n Type of Service / Package:" . $typeof .
+    "\r\n Message:" . $ymessage . "\r\n";
+    if(mail($toMail, $fname, $mailHeader)){
+        $message = "Your Enquiry has been Sumbitted Successfully.";
+    }
+}
+?>
             <div class="contact" id="contact">
                 <div class="contact-content">
                     <div class="contact-head">Connect with us</div>
@@ -229,7 +250,7 @@
                     <div class="sub-head">QUESTIONS<span class="space"></span>&<span class="space"></span>COLLABORATIONS</div>
                     <div class="spacer"></div>
                     <div class="contact-cont row">
-                        <form action="contact.php" name="contact-form" method="POST" class="cont-form col">
+                        <form name="contact-form" method="POST" class="cont-form col">
                             <div class="person-info">
                                 <input type="text" name="fname" id="fname" class="fname" placeholder="Full Name" required>
                                 <input type="text" name="cname" id="cname" class="cname" placeholder="Company Name" required>
